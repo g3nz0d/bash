@@ -1,0 +1,11 @@
+#!/bin/sh
+
+count=0
+total=30
+
+while [ $count -ne $total ]
+do
+        curl https://cloud.advancedanimus.com/index.php/login
+        curl -X POST --header "Content-Type: application/json" --data '{"user": "fake"}' https://cloud.advancedanimus.com/index.php/login
+        count=$(($count +1))
+done
