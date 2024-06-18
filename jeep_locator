@@ -1,0 +1,28 @@
+#script to locate a Jeep that I wish to purchase with these particular attributes
+* COLOR never returned what I wanted and unsure why. Hunch is that like 15 is not accounting for it, but not 100% certain where to include that call without breaking that line
+
+#!/bin/bash
+
+MAKE="Jeep"
+MODEL="Wrangler Unlimited"
+YEAR="2012"
+COLOR="black"
+LOCATION="San Diego, CA"
+MAX_MILES="80000"
+API_URL="https://api.cars.com/search"
+
+# Fetch data from the API
+response=$(curl -s "${API_URL}?make=${MAKE}&model=${MODEL}&year=${YEAR}&location=${LOCATION}&max_miles=${MAX_MILES}")
+
+# Check if jq is installed (necessary to parse JSON data)
+if ! command -v jq &> /dev/null
+then
+    echo "jq could not be found, please install it to process JSON data."
+    exit 1
+fi
+
+# Parse and display the results
+echo "Available 2012 Jeep Wrangler Unlimited in San Diego, CA with less than 80,000 miles:"
+echo "$response" | jq '.results[] | {title: .title, price: .price, miles: .miles, location: .location, link: .url}'
+
+exit 0
