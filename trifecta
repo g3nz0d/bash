@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Perform login
+curl -X POST -d "username=user&password=pass" http://127.0.0.1:5000/login
+curl -X POST -d "username=user&password=pass" http://54.153.63.192:5000/login
+
+# Perform signup
+curl -X POST -d "username=newuser&password=newpass&email=newuser@advancedanimus.com" http://127.0.0.1:5000/signup
+curl -X POST -d "username=newuser&password=newpass&email=newuser@advancedanimus.com" http://54.153.63.192:5000/signup
+
+# Perform payment
+curl -X POST -d "card_number=1234567890123456&amount=100" http://127.0.0.1:5000/payment
+curl -X POST -d "card_number=1234567890123456&amount=100" http://54.153.63.192:5000/payment
