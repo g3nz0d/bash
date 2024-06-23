@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Simulate user registration
+curl -X POST https://cloud.advancedanimus.com/register -d "username=generalzod1&password=kneelbeforezod"
+
+# Simulate user login
+curl -X POST https://cloud.advancedanimus.com/login -d "username=generalzod1&password=kneelbeforezod"
+
+# Simulate file upload
+curl -X POST https://cloud.advancedanimus.com/upload -F "file=@/path/to/file.txt"
+
+# Simulate file download
+curl -O https://cloud.advancedanimus.com/download/file.txt
+
+# Simulate creating a folder
+curl -X POST https://cloud.advancedanimus.com/create-folder -d "foldername=TestFolder"
+
+# Simulate sharing a folder
+curl -X POST https://cloud.advancedanimus.com/share-folder -d "foldername=TestFolder&sharewith=user2"
