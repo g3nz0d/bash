@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Simulate user registration
-curl -X POST https://cloud.advancedanimus.com/register -d "username=generalzod1&password=kneelbeforezod"
+curl -X POST https://cloud.advancedanimus.com/register -d "username=generalzod&password=kneel"
 
 # Simulate user login
-curl -X POST https://cloud.advancedanimus.com/login -d "username=generalzod1&password=kneelbeforezod"
+curl -X POST https://cloud.advancedanimus.com/login -d "username=zod&password=beforezod"
 
 # Simulate file upload
 curl -X POST https://cloud.advancedanimus.com/upload -F "file=@/path/to/file.txt"
@@ -13,7 +13,7 @@ curl -X POST https://cloud.advancedanimus.com/upload -F "file=@/path/to/file.txt
 curl -O https://cloud.advancedanimus.com/download/file.txt
 
 # Simulate creating a folder
-curl -X POST https://cloud.advancedanimus.com/create-folder -d "foldername=TestFolder"
+curl -X POST https://cloud.advancedanimus.com/create-folder -d "foldername=kryptonian1"
 
 # Simulate sharing a folder
 curl -X POST https://cloud.advancedanimus.com/share-folder -d "foldername=TestFolder&sharewith=user2"
