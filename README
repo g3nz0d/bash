@@ -1,0 +1,71 @@
+# Bash Scripts Collection
+
+This repository contains a set of practical Bash scripts for network testing, automation, and utility tasks. Each script is built for quick execution in terminal environments and can be used independently or modified to suit specific use cases.
+
+---
+
+## 📜 Script Descriptions
+
+### 🔹 `generate_POST_traffic`
+Sends repeated HTTP POST requests to a specified endpoint. Useful for simulating API traffic or testing WAFs/load balancers.
+
+**Use Case:**  
+- Load simulation  
+- Security testing  
+- HTTP method behavior analysis  
+
+---
+
+### 🔹 `jeep_locator`
+Looks up information or performs tracking operations (context-specific name suggests this may relate to locating a Jeep or geolocation functionality).
+
+**Use Case:**  
+- Custom asset tracking  
+- GPS simulation or mock script  
+
+---
+
+### 🔹 `site_probe`
+Pings or checks the health of a given list of websites or endpoints. Outputs status for each probe.
+
+**Use Case:**  
+- Uptime monitoring  
+- Endpoint health checks  
+- Cron job integration  
+
+---
+
+### 🔹 `trifecta`
+A multi-stage script (possibly combining ping, curl, and DNS queries) designed to perform three types of connectivity checks in sequence.
+
+**Use Case:**  
+- Layered network diagnostics  
+- Security posture evaluation  
+- Quick triage of connection issues  
+
+---
+
+## 🛠 How to Use
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/g3nz0d/bash.git
+   cd bash
+
+
+## Make scripts executable:
+chmod +x script_name
+
+
+## Run a script:
+./site_probe
+
+
+✅ Ensure you have execution rights and any necessary tools (e.g., curl, ping) installed.
+
+
+# 📌 Notes
+Scripts are designed for Linux/macOS systems.
+Modify parameters and endpoints as needed for your environment.
+Use responsibly when testing against real servers or networks.
+
