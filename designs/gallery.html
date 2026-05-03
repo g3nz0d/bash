@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inspired poster gallery</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f1e8;
+      --panel: #fffdf9;
+      --ink: #6e4b1c;
+      --line: #ddc9ab;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(180deg, #f9f4ec 0%, var(--bg) 100%);
+      color: var(--ink);
+    }
+    main {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 32px 24px 48px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.1rem;
+      margin: 0 0 10px;
+    }
+    .intro {
+      text-align: center;
+      margin: 0 auto 28px;
+      max-width: 760px;
+      line-height: 1.5;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 22px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(110, 75, 28, 0.08);
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      margin: 0 0 8px;
+    }
+    .card p {
+      margin: 0 0 14px;
+      min-height: 3em;
+      line-height: 1.4;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      border: 1px solid #eadbc3;
+      background: #fbf8f3;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Inspired poster gallery</h1>
+    <p class="intro">Five original SVG designs created from the supplied romantic coffee-card aesthetic, each keeping the ornate frame, warm palette, and playful security-themed copy direction.</p>
+    <section class="grid">
+      
+        <article class="card">
+          <h2>design-01-firewall-smile</h2>
+          <p>His firewall looked strong until she logged in with a smile.</p>
+          <img src="generated/design-01-firewall-smile.svg" alt="His firewall looked strong until she logged in with a smile.">
+        </article>
+        
+
+        <article class="card">
+          <h2>design-02-password-policy</h2>
+          <p>Their connection is stronger than his password policy.</p>
+          <img src="generated/design-02-password-policy.svg" alt="Their connection is stronger than his password policy.">
+        </article>
+        
+
+        <article class="card">
+          <h2>design-03-encryption</h2>
+          <p>Even his encryption could not hide that he fell first.</p>
+          <img src="generated/design-03-encryption.svg" alt="Even his encryption could not hide that he fell first.">
+        </article>
+        
+
+        <article class="card">
+          <h2>design-04-guard-down</h2>
+          <p>She did not break his guard. He set it down for her.</p>
+          <img src="generated/design-04-guard-down.svg" alt="She did not break his guard. He set it down for her.">
+        </article>
+        
+
+        <article class="card">
+          <h2>design-05-latency-heart</h2>
+          <p>No lag, no latency - her heart synced with his instantly.</p>
+          <img src="generated/design-05-latency-heart.svg" alt="No lag, no latency - her heart synced with his instantly.">
+        </article>
+        
+    </section>
+  </main>
+</body>
+</html>
